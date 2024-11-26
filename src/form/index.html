@@ -10,7 +10,7 @@
 </head>
 <body>
 
-    <form action="../../index.html" class="form-container">
+    <form action="../mysql/tambah.php" method="post" class="form-container">
         <h1>Form Pendaftaran Peserta Lomba</h1>
         <div class="form-body">
             <label for="nama">Masukkan Nama Anda</label>
@@ -25,11 +25,11 @@
             <div class="radio-container">
                 <div class="radio-style">
                     <label for="laki">Laki laki</label>
-                    <input type="radio" name="jk" id="laki" required>
+                    <input type="radio" name="jk" id="laki" value="laki" required>
                 </div>
                 <div class="radio-style">
                     <label for="perempuan">Perempuan</label>
-                    <input type="radio" name="jk" id="perempuan">
+                    <input type="radio" name="jk" id="perempuan" value="perempuan">
                 </div>
             </div>
         </div>
@@ -43,7 +43,7 @@
         </div>
         <div class="form-body">
             <label for="tgllahir">Pilih Cabor Yang Ingin Diikuti</label>
-            <select name="" id="" required>
+            <select name="cabor" id="" required>
                 <option value="">Pilih Cabor</option>
             </select>
         </div>
