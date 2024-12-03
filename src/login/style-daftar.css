@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+}
+
+.form-container{
+    padding-top: 20px;
+    padding-inline: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form-container h1{
+    padding: 20px 0;
+    font-size: 28px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.150);
+}
+
+.form-body{
+    width: 100%;
+}
+
+.form-body > label{
+    display: block;
+    color: rgba(0, 0, 0, 0.708);
+}
+
+label{
+    font-size: 18px;
+    padding: 10px 0;
+}
+
+input[type='text'], input[type='date'], select, input[type='email'], input[type='password'] {
+    font-size: 15px;
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.162);
+    color: black;
+}
+
+select{
+    background-color: transparent;
+}
+
+.radio-container{
+    display: flex;
+    width: 100%;
+    gap: 10px;
+}
+
+.radio-style{
+    padding: 0px 10px;
+    flex: 1;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    border: 1px solid rgba(0, 0, 0, 0.162);
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.radio-style > label{
+    font-size: 15px;
+}
+
+.radio-style:has(input:checked) {
+    color: #6a43e6;
+    border-color: #6a43e6;
+}
+
+input[type='radio']{
+    width: 20px;
+    height: 20px;
+    accent-color: #6a43e6;
+}
+
+.radio-style label{
+    width: 100%;
+    height: 100%;
+
+}
+
+input:focus{
+    outline: none;
+}
+
+.btn-submit{
+    align-self: flex-start;
+    padding: 10px 20px;
+    background-color: transparent;
+    border: 1px solid #6a43e6;
+    border-radius: 10px;
+    color: #6a43e6;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: all 0.3s ease;
+    margin-bottom: 30px;
+}
+
+.btn-submit:hover{
+    background-color: #6a43e6;
+    color: white;
+}
+
+input:focus{
+    border: 1px solid #6a43e6;
+    color: #6a43e6;
+}
